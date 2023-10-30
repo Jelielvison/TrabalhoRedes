@@ -14,15 +14,91 @@
         <div class="elemDir">
             <h1 class="titulo">TECNOLOGIA<br>DE REDES</h1>
             <div class="nav">
-            <ul>
-                <li><a href="#">Introdução</a></li>
-                <li><a href="#">Topologia</a></li>
-                <li><a href="#">Modelos</a></li>
-                <li><a href="#">Protocolos</a></li>
-            </ul>
-        </div>
+                <ul class="nav1">
+                    <li class="nav2"><a href="#">Introdução</a></li>
+                    <li class="nav2"><a href="#">Topologia</a></li>
+                    <li class="nav2"><a href="#">Modelos</a></li>
+                    <li class="nav2"><a href="#">Protocolos</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    
+    <div class="conteudo">
+        <h1>Modelos</h1>
+        <div class="Modelos">
+            <button class="accordion">OSI</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Camada Física: Lida com a transmissão física dos dados sobre o meio de comunicação. Isso inclui
+                        especificações como voltagens, taxas de transmissão, conectores físicos.</li>
+                    <li>Camada de Enlace de Dados: Responsável pelo estabelecimento de conexões lógicas entre
+                        dispositivos na mesma rede física. Ela trata erros na camada física, garantindo uma comunicação
+                        confiável.</li>
+                    <li>Camada de Rede: Gerencia o roteamento dos dados através da rede. Decide o melhor caminho para os
+                        dados viajarem de acordo com condições como tráfego, velocidade e topologia da rede.</li>
+                    <li>Camada de Transporte: Fornecer serviços de transporte de dados confiável, estabelecendo,
+                        mantendo e encerrando conexões. Também gerencia controle de fluxo, segmentação e retransmissão.
+                    </li>
+                    <li>Camada de Sessão: Gerencia as sessões ou diálogos entre as aplicações. Controla o diálogo,
+                        garantindo que os dados sejam transmitidos de forma ordenada e sem erros.</li>
+                    <li>Camada de Apresentação: Responsável pela tradução, compressão e criptografia dos dados. Garante
+                        que os dados sejam apresentados da maneira correta, independentemente dos formatos utilizados
+                        pelas aplicações.</li>
+                    <li>Camada de Aplicação: É a camada mais próxima do usuário final. Fornece interfaces para os
+                        serviços de rede e é onde as aplicações de software interagem diretamente com o usuário.</li>
+                </ul>
+                </p>
+            </div>
+
+            <button class="accordion">TCP/IP</button>
+            <div class="panel">
+                <p>
+                <ol>
+                    <li>Camada de Enlace:
+                        <p>
+                        <ul>
+                            <li>Responsável pela transmissão de dados entre dispositivos na mesma rede física.</li>
+                            <li>Lida com endereçamento físico (por exemplo, endereços MAC em redes Ethernet).</li>
+                            <li>Controla o acesso ao meio físico (como CSMA/CD em redes Ethernet).</li>
+                        </ul>
+                        </p>
+                    </li>
+
+                    <li>Camada de Rede:
+                        <p>
+                        <ul>
+                            <li>Responsável pelo roteamento de dados entre diferentes redes.</li>
+                            <li>Utiliza endereços lógicos (por exemplo, endereços IP) para encaminhar pacotes de dados entre roteadores.</li>
+                            <li>Exemplos de protocolos nesta camada incluem o IPv4 (Internet Protocol version 4) e o IPv6.</li>
+                        </ul>
+                        </p>
+                    </li>
+
+                    <li>Camada de Transporte:
+                        <p>
+                            <ul>
+                                <li>Gerencia a comunicação ponto a ponto entre dispositivos finais.</li>
+                                <li>Fornece controle de fluxo, segmentação e remontagem de dados.</li>
+                                <li>Dois protocolos principais nesta camada são o TCP (Transmission Control Protocol), que é orientado à conexão e confiável, e o UDP (User Datagram Protocol), que é não orientado à conexão e mais leve.</li>
+                            </ul>
+                            </p>
+                    </li>
+                    <li>Camada de Aplicação:
+                        <p>
+                            <ul>
+                                <li>Fornece interfaces para que os aplicativos possam utilizar os serviços de rede.</li>
+                                <li>Inclui protocolos como HTTP (Hypertext Transfer Protocol), SMTP (Simple Mail Transfer Protocol), FTP (File Transfer Protocol) e outros protocolos de aplicação.</li>
+                            </ul>
+                            </p>
+                    </li>
+                </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="interacao.js"></script>
 </body>
 
 </html>

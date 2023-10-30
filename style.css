@@ -20,10 +20,17 @@ h1{
     font-size: 3rem;
     color: #3A83C5;
     text-align: center;
+}
+
+.titulo{
     margin: 0rem 0rem 10rem 0rem;
 }
 
-ul{
+.modelos{
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+.nav1{
     float: left;
     padding: 0%;
     text-align: center;
@@ -35,7 +42,7 @@ ul{
     
 }
 
-li{
+.nav2{
     color: #FFFFFF;
     background-color: #2B323C;
     padding: 0.8rem;
@@ -43,7 +50,7 @@ li{
     list-style: none;
 }
 
-li:hover{
+.nav2:hover{
     color: #000;
     background-color: #7d838d;
 }
@@ -55,3 +62,33 @@ img{
 .nav{
     background-color: #2B323C;
 }
+
+li{
+    margin: 0.5rem 1rem;
+}
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
