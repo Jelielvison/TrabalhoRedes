@@ -1,5 +1,6 @@
 body{
     background-color: #2B323C;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .cabecalho{
@@ -24,6 +25,10 @@ h1{
 
 .titulo{
     margin: 0rem 0rem 10rem 0rem;
+}
+
+.conteudo, .accordion{
+    font-size: 1.2rem;
 }
 
 .modelos{
@@ -67,6 +72,9 @@ li{
     margin: 0.5rem 1rem;
 }
 
+.top{
+    margin: 1rem 1rem 1rem 1rem;
+}
 
 .accordion {
     background-color: #eee;

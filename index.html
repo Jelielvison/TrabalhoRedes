@@ -25,6 +25,58 @@
     </div>
     
     <div class="conteudo">
+        <h1>Topologia</h1>
+        <div class="Topologia">
+            <button class="accordion">Estrela</button>
+            <div class="panel">
+                <p class="top">Todos os dispositivos conectam-se a um único ponto central, que pode ser um hub ou switch. Quando um dispositivo deseja transmitir dados, ele envia os dados para o ponto central, que os encaminha para o dispositivo de destino. Essa topologia facilita a identificação e resolução de problemas, pois cada conexão é independente.</p>
+            </div>
+        </div>
+
+        <div class="Topologia">
+            <button class="accordion">Barramento</button>
+            <div class="panel">
+                <p class="top">Todos os dispositivos compartilham o mesmo barramento de comunicação. Quando um dispositivo transmite dados, esses dados são enviados por todo o barramento. Cada dispositivo possui um endereço único, e somente o dispositivo com o endereço correspondente aceita os dados. Isso é conhecido como acesso ao meio compartilhado.</p>
+            </div>
+        </div>
+
+        <div class="Topologia">
+            <button class="accordion">Anel</button>
+            <div class="panel">
+                <p class="top">Cada dispositivo está conectado aos seus dois vizinhos mais próximos, formando um anel fechado. Quando um dispositivo transmite dados, esses dados circulam pelo anel até atingir o destino. Cada dispositivo regenera os sinais, garantindo que os dados continuem a circular pelo anel.</p>
+            </div>
+        </div>
+
+        <div class="Topologia">
+            <button class="accordion">Malha</button>
+            <div class="panel">
+                <p class="top">Cada dispositivo está conectado a todos os outros, proporcionando vários caminhos para a comunicação. Se um caminho estiver indisponível, os dados podem ser roteados por caminhos alternativos. Isso aumenta a redundância e a confiabilidade da rede.</p>
+            </div>
+        </div>
+
+        <div class="Topologia">
+            <button class="accordion">Árvore</button>
+            <div class="panel">
+                <p class="top">Os dispositivos são organizados em uma estrutura hierárquica de árvore. Existem níveis, e a comunicação segue os ramos da árvore até atingir o destino. Essa topologia é eficaz para redes organizadas, como redes de empresa.</p>
+            </div>
+        </div>
+
+        <div class="Topologia">
+            <button class="accordion">Híbrida</button>
+            <div class="panel">
+                <p class="top">Combina duas ou mais topologias em uma única rede. Cada segmento da rede pode ter sua própria topologia, proporcionando flexibilidade. Por exemplo, uma parte da rede pode ser em estrela, enquanto outra em anel.</p>
+            </div>
+        </div>
+
+        <div class="Topologia">
+            <button class="accordion">Ponto-a-Ponto</button>
+            <div class="panel">
+                <p class="top">Cada dispositivo está conectado diretamente a outro dispositivo. A comunicação ocorre ponto a ponto, sem a necessidade de dispositivos intermediários. Isso simplifica a arquitetura da rede e é comumente encontrado em redes pequenas ou conexões diretas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo">
         <h1>Modelos</h1>
         <div class="Modelos">
             <button class="accordion">OSI</button>
@@ -98,6 +150,136 @@
             </div>
         </div>
     </div>
+
+    <div class="conteudo">
+        <h1>Protocolos OSI</h1>
+        <div class="Modelos">
+            <button class="accordion">Camada Física</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Ethernet (IEEE 802.3): Um protocolo de comunicação amplamente utilizado em redes locais (LANs).</li>
+                    <li>USB (Universal Serial Bus): Utilizado para a conexão de dispositivos periféricos em computadores.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Enlace de Dados</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Point-to-Point Protocol (PPP): Um protocolo comumente usado para estabelecer uma conexão direta entre dois pontos.</li>
+                    <li>IEEE 802.1Q (VLAN): Protocolo que permite a segmentação de uma rede em VLANs (Redes Locais Virtuais).</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Rede</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Internet Protocol (IP): Responsável pelo endereçamento e roteamento de pacotes na Internet.</li>
+                    <li>Internet Control Message Protocol (ICMP): Usado para comunicação entre dispositivos de rede, especialmente para relatórios de erro.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Transporte</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Transmission Control Protocol (TCP): Fornecendo comunicação confiável e orientada à conexão.</li>
+                    <li>User Datagram Protocol (UDP): Oferecendo comunicação não confiável e de baixa latência.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Sessão</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>NetBIOS (Network Basic Input/Output System): Usado para comunicação entre aplicativos em uma rede.</li>
+                    <li>Session Initiation Protocol (SIP): Comumente utilizado para iniciar, modificar e encerrar chamadas de voz e vídeo pela Internet.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Apresentação</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Hypertext Transfer Protocol (HTTP): Utilizado para a transferência de dados na World Wide Web.</li>
+                    <li>Secure Sockets Layer (SSL) / Transport Layer Security (TLS): Fornecendo segurança na comunicação pela Internet.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Aplicação</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Simple Mail Transfer Protocol (SMTP): Utilizado para enviar e-mails.</li>
+                    <li>File Transfer Protocol (FTP): Usado para a transferência de arquivos pela rede.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h1>Protocolos TPC/IP</h1>
+        <div class="Modelos">
+            <button class="accordion">Camada de Enlace</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Ethernet (IEEE 802.3): É um protocolo amplamente utilizado para comunicação de dados em redes locais (LANs). Ele opera na camada de link e fornece os meios físicos para a transmissão de dados.</li>
+                    <li>Point-to-Point Protocol (PPP): É um protocolo de camada de link usado para estabelecer uma conexão direta entre dois nós de uma rede. É frequentemente utilizado em conexões de linha discada.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Internet</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Internet Protocol (IP): Este protocolo é essencial para o funcionamento da Internet. Ele fornece o endereçamento e o roteamento dos pacotes de dados entre dispositivos em redes diferentes.</li>
+                    <li>Internet Control Message Protocol (ICMP): Usado para enviar mensagens de controle e erros, como mensagens de "ping" para verificar a conectividade de rede.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Transporte</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Transmission Control Protocol (TCP): Um protocolo orientado à conexão que fornece entrega confiável de dados, controle de fluxo e retransmissão de pacotes perdidos. É usado em aplicações que exigem uma entrega precisa e ordenada de dados.</li>
+                    <li>User Datagram Protocol (UDP): Um protocolo de transporte mais leve e sem conexão, que é adequado para aplicações que podem tolerar alguma perda de dados, como transmissões de áudio e vídeo em tempo real.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="Modelos">
+            <button class="accordion">Camada de Aplicação</button>
+            <div class="panel">
+                <p>
+                <ul>
+                    <li>Hypertext Transfer Protocol (HTTP): Usado para a comunicação na World Wide Web. É o protocolo por trás da transmissão de dados na web, incluindo a exibição de páginas da web.</li>
+                    <li>File Transfer Protocol (FTP): Utilizado para a transferência de arquivos entre sistemas. Permite o download e upload de arquivos de e para servidores FTP.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="interacao.js"></script>
 </body>
 
